@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
@@ -10,9 +11,21 @@
         <h2>New Activity</h2>
         <div>
           <h3>Select a Category:</h3>
-          <button type='button'>Study</button>
-          <button type='button'>Meditate</button>
-          <button type='button'>Exercise</button>
+          <button 
+            id='study-button' 
+            type='button' 
+            data-active='false'
+          >Study</button>
+          <button 
+            id='meditate-button' 
+            type='button' 
+            data-active='false'
+          >Meditate</button>
+          <button 
+            id='exercise-button' 
+            type='button' 
+            data-active='false'
+          >Exercise</button>
         </div>
         <d>
           <label for='goal'>
@@ -20,10 +33,10 @@
           </label>
           <input id='goal' type='text'>
           <label for='minutes'>Minutes</label>
-          <input id='minutes' type='text'>
+          <input id='minutes' type='number'>
           <label for='seconds'>Seconds</label>
-          <input id='seconds' type='text'>
-          <button type='button'>Start Activity</button>
+          <input id='seconds' type='number'>
+          <button id='start-button' type='button'>Start Activity</button>
         </div>
       </section>
       <aside>
@@ -35,5 +48,5 @@
       </aside>
     </main>
   </body>
-  <script src='/main.js'></script>
+  <script src='./main.js'></script>
 </html>

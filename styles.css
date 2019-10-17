@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2B2733;
+  color: #fff;
+  display: grid;
+  font-family: 'Montserrat', sans-serif;
+  grid-template-rows: 10% 1fr;
+  grid-template-columns: 66% 33%;
+  grid-template-areas: 
+    "head head"
+    "section aside";
+  margin: 0px;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+h1 {
+  background-color: #46424D;
+  color: #fff;
+  grid-area: head;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  background-color: #46424D;
+  grid-area: section;
+}
+
+.study-button-active {
+  color: #B3FD78;
+  border: 2px solid #B3FD78;
+}
+
+.meditate-button-active {
+  color: #C278FD;
+  border: 2px solid #C278FD;
+}
+
+.exercise-button-active {
+  color: #FD8078;
+  border: 2px solid #FD8078;
+}
+
+aside {
+  background-color: #46424D;
+  grid-area: aside; 
+}
