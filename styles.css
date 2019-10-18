@@ -5,13 +5,7 @@
 body {
   background-color: #2B2733;
   color: #fff;
-  display: grid;
   font-family: 'Montserrat', sans-serif;
-  grid-template-rows: 10% 1fr;
-  grid-template-columns: 66% 33%;
-  grid-template-areas: 
-    "head head"
-    "section aside";
   margin: 0px;
   min-height: 100vh;
   min-width: 100vw;
@@ -22,13 +16,47 @@ h1 {
   color: #fff;
   grid-area: head;
   margin: 0px;
-  padding: 10px;
+  min-height: 10vh;
+  padding: 20px;
   text-align: center;
+}
+
+.activity-title {
+  position: absolute;
+  left: 50px;
+}
+
+main {
+  background-color: #2B2733;
+  display: flex;
 }
 
 section {
   background-color: #46424D;
-  grid-area: section;
+  border-radius: 5px;
+  min-height: 90vh;
+  margin: 60px 50px 50px 50px;
+  padding: 20px;
+  width: 66%;
+}
+
+.category-button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 40px;
+}
+
+.category-buttons {
+  background-color:  #46424D;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  height: 65px;
+  width: 200px;
+}
+
+.category-buttons:focus {
+  outline: none;
 }
 
 .study-button-active {
@@ -46,7 +74,37 @@ section {
   border: 2px solid #FD8078;
 }
 
-aside {
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
   background-color: #46424D;
-  grid-area: aside; 
+  border: none;
+  border-bottom: 2px solid #9C9A9F;
+  margin: 25px 0px;
+}
+
+input:focus {
+  outline: none;
+}
+
+#start-button {
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  margin-left: auto;
+  width: 150px;
+}
+
+aside {
+  border-left: 2px solid #46424D;
+  min-height: 90vh;
+  padding: 20px;
+  width: 33%;
+}
+
+.past-activities {
+  margin-top: 10px;
 }

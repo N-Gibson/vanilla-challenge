@@ -6,30 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+    <h1>INTENTION TIMER</h1>
     <main>
-      <h1>INTENTION TIMER</h1>
+      <h2 class='activity-title'>New Activity</h2>
       <section>
         <div class='form'>
-          <h2>New Activity</h2>
-          <div>
-            <h3>Select a Category:</h3>
+          <h3>Select a Category:</h3>
+          <div class='category-button-container'>
             <button 
               id='study-button' 
+              class= 'category-buttons'
               type='button' 
               data-active='false'
             >Study</button>
             <button 
               id='meditate-button' 
+              class= 'category-buttons'
               type='button' 
               data-active='false'
             >Meditate</button>
             <button 
               id='exercise-button' 
+              class= 'category-buttons'
               type='button' 
               data-active='false'
             >Exercise</button>
           </div>
-          <div>
+          <div class='inputs'>
             <label for='goal'>
             What would you like to accomplish during this time?
             </label>
@@ -38,13 +41,13 @@
             <input id='minutes' type='number'>
             <label for='seconds'>Seconds</label>
             <input id='seconds' type='number'>
-            <button id='start-button' type='button'>Start Activity</button>
+            <button id='start-button' type='button'>START ACTIVITY</button>
           </div>
         </div>
         <div class='timer'></div>
       </section>
       <aside>
-        <h2>Past Activities</h2>
+        <h2 class='past-activities'>Past Activities</h2>
         <div>
           <p>You haven't logged any activities yet.</p>
           <p>Complete the form to the left to get started!</p>
