@@ -3,41 +3,45 @@
   <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <main>
       <h1>INTENTION TIMER</h1>
       <section>
-        <h2>New Activity</h2>
-        <div>
-          <h3>Select a Category:</h3>
-          <button 
-            id='study-button' 
-            type='button' 
-            data-active='false'
-          >Study</button>
-          <button 
-            id='meditate-button' 
-            type='button' 
-            data-active='false'
-          >Meditate</button>
-          <button 
-            id='exercise-button' 
-            type='button' 
-            data-active='false'
-          >Exercise</button>
-        </div>
-        <d>
-          <label for='goal'>
+        <div class='form'>
+          <h2>New Activity</h2>
+          <div>
+            <h3>Select a Category:</h3>
+            <button 
+              id='study-button' 
+              type='button' 
+              data-active='false'
+            >Study</button>
+            <button 
+              id='meditate-button' 
+              type='button' 
+              data-active='false'
+            >Meditate</button>
+            <button 
+              id='exercise-button' 
+              type='button' 
+              data-active='false'
+            >Exercise</button>
+          </div>
+          <div>
+            <label for='goal'>
             What would you like to accomplish during this time?
-          </label>
-          <input id='goal' type='text'>
-          <label for='minutes'>Minutes</label>
-          <input id='minutes' type='number'>
-          <label for='seconds'>Seconds</label>
-          <input id='seconds' type='number'>
-          <button id='start-button' type='button'>Start Activity</button>
+            </label>
+            <input id='goal' type='text'>
+            <label for='minutes'>Minutes</label>
+            <input id='minutes' type='number'>
+            <label for='seconds'>Seconds</label>
+            <input id='seconds' type='number'>
+            <button id='start-button' type='button'>Start Activity</button>
+          </div>
         </div>
+        <div class='timer'></div>
       </section>
       <aside>
         <h2>Past Activities</h2>
